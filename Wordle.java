@@ -120,10 +120,6 @@ public class Wordle {
             computeFeedback(secret, guess, results[attempt]);
             // Print board
             printBoard(guesses, results, attempt);
-            if(isAllGreen(results[attempt])){
-                won = true;
-            }
-            attempt++;
 
             // Check win
             if (isAllGreen(results[attempt])) {
